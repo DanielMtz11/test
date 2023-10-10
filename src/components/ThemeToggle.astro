@@ -2,13 +2,13 @@
 import Icon from './Icon.astro';
 ---
 
-<theme-toggle>
+<!-- <theme-toggle>
 	<button>
 		<span class="sr-only">Dark theme</span>
 		<span class="icon light"><Icon icon="sun" /></span>
 		<span class="icon dark"><Icon icon="moon-stars" /></span>
 	</button>
-</theme-toggle>
+</theme-toggle> -->
 
 <style>
 	button {
@@ -79,7 +79,7 @@ import Icon from './Icon.astro';
 			};
 
 			// Toggle the theme when a user clicks the button.
-			button.addEventListener('click', () => setTheme(!this.isDark()));
+			// button.addEventListener('click', () => setTheme(!this.isDark()));
 
 			// Initialize button state to reflect current theme.
 			setTheme(this.isDark());
