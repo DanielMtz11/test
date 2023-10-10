@@ -12,6 +12,7 @@ import Icon from "../components/Icon.astro";
 import Pill from "../components/Pill.astro";
 import PortfolioPreview from "../components/PortfolioPreview.astro";
 
+
 // Page section components
 import ContactCTA from "../components/ContactCTA.astro";
 import Skills from "../components/Skills.astro";
@@ -31,13 +32,16 @@ const projects = (await getCollection("work"))
       <header class="hero">
         <Hero
           title="Hello, my name is Daniel Martinez"
-          tagline="I am a Creative Developer who is currently based in Iguala,Gro."
+          tagline="I´m a Full Stack developer with experience in building web applications using PostgreSQL, Express, React, and Node.js"
           align="start"
         >
           <div class="roles">
             <Pill><Icon icon="code" size="1.33em" /> Developer</Pill>
-            <Pill><Icon icon="brush" size="1.33em" /> painter</Pill>
-            <Pill><Icon icon="book" size="1.33em" /> reader</Pill>
+            <Pill><Icon icon="enginner" size="1.33em" />Enginner</Pill>
+            <Pill><Icon icon="electronic" size="1.33em" />Electronic</Pill>
+            <!-- <svg data-testid="FlashOnIcon"></svg> -->
+
+            
           </div>
         </Hero>
 
@@ -265,3 +269,4 @@ const projects = (await getCollection("work"))
     }
   }
 </style>
+../components/Icon.jsx../components/Icon.jsx

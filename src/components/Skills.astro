@@ -2,22 +2,104 @@
 import Icon from './Icon.astro';
 ---
 
+<h1 class="skills-title">Skills</h1>
 <section class="box skills">
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="terminal-window" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Full Stack</h2>
-		<p>I´m a PERN stack developer with experience in building web applications using PostgreSQL, Express, React, and Node.js</p>
+		<Icon icon="html"  size="2.8rem" color='none' />
+		<h2>HTML</h2>
+		<p>A markup language used to create and structure the content of a web page.
+		</p>
+		<!-- <p>Lenguaje de marcado utilizado para crear y estructurar el contenido de una página web.</p> -->
+	</div>
+
+	<div class="stack gap-2 lg:gap-4">
+		
+		<Icon icon="css" size="2.8rem" color="none"  />
+		<h2>CSS</h2>
+		<p>Style language used to control the presentation and layout of HTML documents.
+		</p>
+		<!-- <p>Lenguaje de estilo utilizado para controlar la presentación y el diseño de documentos HTML.</p> -->
 	</div>
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="data-base"  color="var(--accent-regular)" size="2.5rem" gradient  />
-		<h2>Data Base</h2>
-		<p>Knowledge of database design and management using PostgreSQL and MySQL.</p>
+		<Icon icon="js"  size="2.8rem" color="none"  />
+		<h2>JavaScript</h2>
+		<p>A high-level programming language used primarily in web development.
+		</p>
+		<!-- <p>Lenguaje de programación de alto nivel que se utiliza principalmente en el desarrollo web.</p> -->
+	</div>
+
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="react"  size="2.8rem" color="none"  />
+		<h2>React.js</h2>
+		<p>JavaScript library used to build interactive and efficient user interfaces for web and mobile applications.
+		</p>
+		<!-- <p>Biblioteca de JavaScript que se utiliza para construir interfaces de usuario interactivas y eficientes para aplicaciones web y móviles.</p> -->
+	</div>
+
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="redux" color="none"  size="2.5rem"  />
+		<h2>Redux</h2>
+		<p>JavaScript library that allows, from a global store and data flow control, to create robust and scalable applications.</p>
+		<!-- <p>Biblioteca de JavaScript que permite a partir de una store global y un control del flujo de datos, crear aplicaciones sólidas y escalables.</p> -->
+	</div>
+
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="next" color="none"  size="2.5rem"  />
+		<h2>Next.js</h2>
+		<p>JavaScript framework that allows us to easily create production-ready React websites.
+		</p>
+		<!-- <p>Framework de JavaScript que nos permite crear fácilmente sitios web de React listos para salir a producción.</p> -->
 	</div>
 	<div class="stack gap-2 lg:gap-4">
-		<Icon icon="bug" color="var(--accent-regular)" size="2.5rem" gradient />
-		<h2>Testing</h2>
-		<p>Experience with testing frameworks such as Jest and testing APIs with postman</p>
+		<Icon icon="material" color='none' size="2.8rem" gradient />
+		<h2>material UI</h2>
+		<p>Library that provides a wide variety of predefined and styled UI components for React.
+		</p>
+		<!-- <p>Biblioteca que proporciona una amplia variedad de componentes de interfaz de usuario predefinidos y estilizados para React.</p> -->
 	</div>
+
+	<div class="stack gap-2 lg:gap-4">		
+		<Icon icon="node" size="2.8rem"color='none'  />
+		<h2>Node.js</h2>
+		<p>Asynchronous event-driven JavaScript runtime environment, it is ideal for web and server-side application development.
+		</p>
+		<!-- <p>Entorno de ejecución de JavaScript orientado a eventos asíncronos, es ideal para el desarrollo de aplicaciones web y servidores.</p> -->
+	</div>
+
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="ex" color='none'size="2.8rem"  />
+		<h2>Express.js</h2>
+		<p>Web application framework for Node.js, suitable for creating web applications, APIs and web services.
+		</p>
+		<!-- <p>Framework de aplicación web para Node.js, adecuado para crear aplicaciones web, APIs y web services.</p> -->
+	</div>
+
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="pos"   size="2.8rem" color='none'   />
+		<h2>PostgreSQL</h2>
+		<p>Object-oriented, open source, high-performance, relational database management system.
+		</p>
+		<!-- <p>Sistema de gestión de bases de datos relacional orientado a objetos, de código abierto y de alto rendimiento.</p> -->
+	</div>
+
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="mysql" color='none' size="2.5rem"  />
+		<h2>MySQL</h2>
+		<p>Relational database management system, used in a wide range of applications and projects.
+		</p>
+		<!-- <p>Sistema de gestión de bases de datos relacional, se utiliza en una amplia gama de aplicaciones y proyectos.</p> -->
+	</div>
+
+	<div class="stack gap-2 lg:gap-4">
+		<Icon icon="posman" color='none' size="2.5rem"  />
+		<h2>Postman</h2>
+		<p>Collaborative platform for API development, used to test, design and document APIs.
+		</p>
+		<!-- <p>Plataforma de colaboración para el desarrollo de APIs, que se utiliza para probar, diseñar y documentar APIs.</p> -->
+	</div>
+
+</div>
+
 </section>
 
 <style>
@@ -28,6 +110,12 @@ import Icon from './Icon.astro';
 		/* background-color: rgb(0,0,0); */
 		background-color: var(--gray-999_40);
 		box-shadow: var(--shadow-sm);
+	}
+
+	.skills-title{
+		display: flex;
+		justify-content: center;
+		padding-top: 3rem;
 	}
 
 	.skills {
